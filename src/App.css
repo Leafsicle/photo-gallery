@@ -17,10 +17,7 @@ a{
   flex-shrink: 1;
   padding: .75rem;
   border: .5px solid #c0bebe;
-  width: 40vw
-}
-h1, h2{
-  color: #3273dc;
+  width: 40vw;
 }
 header{
   margin: 2rem 0 2rem 2rem
