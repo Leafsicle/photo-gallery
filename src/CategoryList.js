@@ -1,11 +1,12 @@
 import React, { Component } from 'react'
+import Data from './Data.json'
 
 class CategoryList extends Component {
 	render() {
 		return (
 			<>
 				<aside className="column">
-					<h2>Panda Bears</h2>
+					<h2>{Data.pandas.title}</h2>
 					<p>
 						Pandas are bears native to south-central China, and are objectively
 						the cutest animals on earth.
