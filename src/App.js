@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import './App.css'
 import CategoryList from './CategoryList'
+import PhotoList from './PhotoList'
+import PhotoDetail from './PhotoDetail'
 
 class App extends Component {
 	render() {
@@ -17,18 +19,8 @@ class App extends Component {
 				</header>
 				<main className="columns">
 					<CategoryList />
-					<article>
-						<h2>Panda Bears</h2>
-						<p>
-							Pandas are bears native to south-central China, and are
-							objectively the cutest animals on earth.
-						</p>
-						<img src="https://cdn-images-1.medium.com/max/1600/1*i1vVm3EqqDIkyucD0079wg.jpeg" />
-						<p>Panda Waving</p>
-						<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Grosser_Panda.JPG/2560px-Grosser_Panda.JPG" />
-						<p>Großer Panda im Ocean Park, Hongkong</p>
-					</article>
-					<article />
+					<PhotoList />
+					<PhotoDetail />
 				</main>
 			</div>
 		)
