@@ -8,7 +8,7 @@ class PhotoDetail extends Component {
 		const index = this.props.match.params.index
 
 		return (
-			<article>
+			<article class="bigPicture">
 				<h1>{Data[category].photos[index].title}</h1>
 				<img src={Data[category].photos[index].imageURL} />
 				<a href={Data[category].photos[index].sourceURL} />
