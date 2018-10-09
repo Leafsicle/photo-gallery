@@ -14,10 +14,17 @@ class App extends Component {
 						<h1>Things I Like</h1>
 						<p>A Photo Gallery by Jason L Perry</p>
 					</header>
+					<nav>
+						<ul>
+							<li>
+								<Link to="/">Home?</Link>
+							</li>
+						</ul>
+					</nav>
 					<main className="columns">
 						<Switch>
 							<Route exact path="/" component={CategoryList} />
-							<Route path="/:category" component={PhotoList} />
+							<Route exact path="/:category" component={PhotoList} />
 							<Route path="/:category/:index" component={PhotoDetail} />
 						</Switch>
 					</main>

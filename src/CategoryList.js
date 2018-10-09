@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom'
 import Data from './Data.json'
 
 class CategoryList extends Component {
@@ -8,7 +9,9 @@ class CategoryList extends Component {
 				{Object.keys(Data).map(category => {
 					return (
 						<aside className="column">
-							<h2>{Data[category].title}</h2>
+							<h2>
+								<Link to={`/${category}`}>{Data[category].title}</Link>
+							</h2>
 							<p>{Data[category].description}</p>
 							<img src={Data[category].photos[0].imageURL} />
 						</aside>
